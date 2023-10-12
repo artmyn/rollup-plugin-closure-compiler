@@ -1,4 +1,18 @@
-# rollup-plugin-closure-compiler
+# Artmyn version of rollup-plugin-closure-compiler
+
+Because the package is not supported, it relies on older version of closure compiler and acorn. They have bugs fixed in 
+more recent versions which this fork of the package fixes.
+
+# Publication:
+
+```shell
+npm install
+npm run co:login
+npm publish
+```
+
+
+# Original README:
 
 Leverage [Closure Compiler](https://developers.google.com/closure/compiler/) to minify and optimize JavaScript with [Rollup](https://rollupjs.org/guide/en).
 
