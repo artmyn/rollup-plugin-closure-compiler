@@ -1,4 +1,3 @@
-
 console.log("foo");
 console.log("baz");
 import("./utf8-lazy-527020b7.js");

@@ -1,6 +1,6 @@
 {
-  "name": "@ampproject/rollup-plugin-closure-compiler",
-  "version": "0.27.0",
+  "name": "@artmyn/rollup-plugin-closure-compiler",
+  "version": "0.29.0",
   "description": "Rollup + Google Closure Compiler",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.mjs",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ampproject/rollup-plugin-closure-compiler.git"
+    "url": "https://github.com/artmyn/rollup-plugin-closure-compiler.git"
   },
   "author": "The AMP HTML Authors",
   "engines": {
@@ -29,17 +29,18 @@
     "build": "rimraf dist transpile transpile-tests && tsc -p tsconfig.json & wait",
     "postbuild": "rollup -c",
     "release": "np --no-2fa --any-branch",
-    "prepublishOnly": "npm-run-all build"
+    "prepublishOnly": "npm-run-all build",
+    "co:login": "aws codeartifact login --tool npm --repository artmyn --domain artmyn --domain-owner 705733544569"
   },
   "peerDependencies": {
     "rollup": ">=1.27"
   },
   "dependencies": {
     "@ampproject/remapping": "0.2.0",
-    "acorn": "7.3.1",
-    "acorn-walk": "7.1.1",
+    "acorn": "8.10.0",
+    "acorn-walk": "8.2.0",
     "estree-walker": "2.0.1",
-    "google-closure-compiler": "20210808.0.0",
+    "google-closure-compiler": "20230802.0.0",
     "magic-string": "0.25.7",
     "uuid": "8.1.0"
   },

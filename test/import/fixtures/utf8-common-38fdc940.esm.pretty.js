@@ -1,4 +1,3 @@
-
 function ɵɵbar(){
   console.log("bar");
 };
